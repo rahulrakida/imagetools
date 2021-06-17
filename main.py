@@ -17,3 +17,7 @@ from PIL import Image, ImageFilter
 import argparse
 import random
 
+parser = argparse.ArgumentParser(description="command-line tool, adds filters to images")
+parser.add_argument('operation', help='Operation to perform on the image.')
+parser.add_argument('filename', help='Image file path/name')
+parser.parse_args()
