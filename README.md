@@ -2,9 +2,9 @@
 ### a command line tool for adding filters to images
 
 #### Features
-- Blur
-- Sharpen
-- Smooth
+- Blur: `blur`
+- Sharpen: `sharpen`
+- Smooth: `smooth`, `smooth+`
 
 #### TODO
 - GUI
