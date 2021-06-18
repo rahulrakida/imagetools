@@ -6,7 +6,7 @@
 - Sharpen
 - Smooth
 
-#### Coming Soon
+#### TODO
 - GUI
 
 #### Instructions
