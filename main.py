@@ -13,11 +13,17 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-from PIL import Image, ImageFilter
+import PIL
 import argparse
 import random
 
+"""
 parser = argparse.ArgumentParser(description="command-line tool, adds filters to images")
 parser.add_argument('operation', help='Operation to perform on the image.')
 parser.add_argument('filename', help='Image file path/name')
 parser.parse_args()
+"""
+
+infile = PIL.Image.open('image.png')
+outfile = infile.filter(PIL.ImageFilter.BLUR)
+outfile.show()
