@@ -18,7 +18,7 @@ from PIL import Image, ImageFilter
 import argparse
 import random
 
-
+# get operation, filename from command line options
 parser = argparse.ArgumentParser(description="command-line tool, adds filters to images")
 parser.add_argument('operation', help='Operation to perform on the image.')
 parser.add_argument('filename', help='Image file path/name')
@@ -26,16 +26,25 @@ args = parser.parse_args()
 
 # print(args)
 
+# open image, close if invalid
 try:
     infile = Image.open(args.filename)
 except:
     print("error: invalid image file. maybe this file ain't exist?")
     quit(1)
+
+# apply filters
 if args.operation == 'blur':
     outfile = infile.filter(ImageFilter.BLUR)
 elif args.operation == 'sharpen':
     outfile = infile.filter(ImageFilter.SHARPEN)
+elif args.operation == 'smooth':
+    outfile = infile.filter(ImageFilter.SMOOTH)
+elif args.operation == 'smooth+':
+    outfile = infile.filter(ImageFilter.SMOOTH_MORE)
 else:
     print("error: invalid operation (not in: blur, sharpen)")
     quit(1)
-outfile.save(f'image-{str(random.choice(range(start=1000,stop=10000)))}.png') # This saves the file under a random filename
+
+# save the new image
+outfile.save(f'image-{str(random.choice(range(1000,10000)))}.png') # This saves the file under a random filename
