@@ -9,10 +9,15 @@
 #### TODO
 - GUI
 
+#### Dependencies
+- python3
+- python3-pip
+
 #### Instructions
+
 ```
-sudo apt install python3
 git clone https://github.com/rahulrakida/imagetools.git
 cd imagetools
+pip3 install -r requirements.txt
 python3 main.py operation filename
 ```
