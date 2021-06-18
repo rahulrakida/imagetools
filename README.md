@@ -17,4 +17,4 @@
 
 > cd imagetools
 
-> python3 main.py <operation> <filename>
+> python3 main.py operation filename
