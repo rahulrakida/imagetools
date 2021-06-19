@@ -43,7 +43,7 @@ elif args.operation == 'smooth':
 elif args.operation == 'smooth+':
     outfile = infile.filter(ImageFilter.SMOOTH_MORE)
 else:
-    print("error: invalid operation (not in: blur, sharpen)")
+    print("error: invalid operation (not in: blur, sharpen, smooth, smooth+)")
     quit(1)
 
 # save the new image
