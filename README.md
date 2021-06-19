@@ -19,5 +19,5 @@
 git clone https://github.com/rahulrakida/imagetools.git
 cd imagetools
 pip3 install -r requirements.txt
-python3 main.py operation filename
+python3 imagetools.py operation filename
 ```
