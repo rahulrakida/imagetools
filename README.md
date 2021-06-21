@@ -7,7 +7,7 @@
 - Smooth: `smooth`, `smooth+`
 
 #### TODO
-- GUI
+- GUI (low priority)
 
 #### Dependencies
 - python3
