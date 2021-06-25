@@ -39,6 +39,7 @@ def main():
     parser = argparse.ArgumentParser(description="command-line tool, adds filters to images")
     parser.add_argument('operation', help='Operation to perform on the image.')
     parser.add_argument('filename', help='Image file path/name')
+    parser.add_argument('--show', help='Show output image after saving', action='store_true')
     args = parser.parse_args()
 
     # print(args)
@@ -48,12 +49,17 @@ def main():
         infile = Image.open(args.filename)
     except:
         print("error: invalid image file. maybe this file ain't exist?")
-        quit(1)
+        quit(2)
     
     outfile = apply_filter(args.operation, infile)
 
+    outfile_name = f'image-{str(random.choice(range(1000,10000)))}.png'
+
     # save the new image
-    outfile.save(f'image-{str(random.choice(range(1000,10000)))}.png')
+    outfile.save(outfile_name)
+    if args.show:
+        print("Showing file")
+        outfile.show()
 
 if __name__ == '__main__':
     main()

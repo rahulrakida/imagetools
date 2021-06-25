@@ -1,6 +1,9 @@
 ## imagetools
 ### a command line tool for adding filters to images
 
+#### Video Demo not completed yet
+#### Description: 
+
 #### Features
 - Blur: `blur`
 - Sharpen: `sharpen`
@@ -19,5 +22,6 @@
 git clone https://github.com/rahulrakida/imagetools.git
 cd imagetools
 pip3 install -r requirements.txt
-python3 imagetools.py operation filename
 ```
+
+For usage, type `python3 imagetools.py --help`
