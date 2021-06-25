@@ -25,3 +25,8 @@ pip3 install -r requirements.txt
 ```
 
 For usage, type `python3 imagetools.py --help`
+
+#### License
+
+This program is under the GNU General Public License v3.
+For details, see `LICENSE`.
