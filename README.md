@@ -4,6 +4,16 @@
 ### [Video Demo](https://youtu.be/z2hX0aL_PFM): [https://youtu.be/z2hX0aL_PFM](https://youtu.be/z2hX0aL_PFM)
 ### Description:
 
+One day, I was thinking about ideas for a [CS50](https://cs50.harvard.edu/x/2021) final project, and I thought
+about adding filters to an image on the command-line. There are countless MOBILE
+apps for doing this, but I had never actually heard of a command-line image
+editor. So, I created my own.
+
+The program uses 4 predefined filters from the PIL.ImageFilter module: `BLUR`,
+`SHARPEN`, `SMOOTH`, and `SMOOTH_MORE`. The input image is loaded as a `PIL.Image`
+object, and converted using the method `PIL.Image.filter()`. The image is then saved
+as a PNG with a random filename: `image-[4 digit random number].png`.
+
 #### Features
 - Blur: `blur`
 - Sharpen: `sharpen`
@@ -28,6 +38,7 @@ pip3 install -r requirements.txt
 For usage, type `python3 imagetools.py --help`
 
 #### License
+    See `LICENSE` for a copy of the GNU GPL v3.
 
     imagetools - a command-line program for adding filters to images
     Copyright (C) 2021 Rahul Wavare
