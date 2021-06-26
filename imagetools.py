@@ -16,6 +16,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from PIL import Image, ImageFilter
+import os.path
 import argparse
 import random
 
@@ -53,8 +54,17 @@ def main():
         quit(2)
     
     outfile = apply_filter(args.operation, infile)
+    i = 0
+    outfile_name = None
+    while True:
+        i = i + 1
+        outfile_name = f"image-{str(random.choice(range(1000,10000)))}.png"
+        if i >= 10000: # Incredibly rare case in which there are no output filenames available.
+            print("error: no possibilities for output filename (How did you manage to get this error?)")
+            quit(3)
 
-    outfile_name = f"image-{str(random.choice(range(1000,10000)))}.png"
+        if not os.path.exists(outfile_name):
+            break
 
     # save the new image
     outfile.save(outfile_name)
