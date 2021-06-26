@@ -2,7 +2,7 @@
 ## a command-line tool for adding filters to images
 
 ### [Video Demo](https://youtu.be/z2hX0aL_PFM): [https://youtu.be/z2hX0aL_PFM](https://youtu.be/z2hX0aL_PFM)
-### Description: 
+### Description:
 
 #### Features
 - Blur: `blur`
@@ -11,7 +11,7 @@
 
 #### TODO
 - GUI (low priority)
-- ~~Video demo (medium priority)~~
+- ~~Video demo (medium priority)~~ - DONE
 
 #### Dependencies
 - python3
@@ -31,16 +31,16 @@ For usage, type `python3 imagetools.py --help`
 
     imagetools - a command-line program for adding filters to images
     Copyright (C) 2021 Rahul Wavare
-    
+
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
-    
+
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-    
+
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
