@@ -1,4 +1,4 @@
-#    imagetools - command-line tool, adds filters to images
+#    imagetools - command-line tool for adding filters to images
 #    Copyright (C) 2021 Rahul Wavare
 #
 #    This program is free software: you can redistribute it and/or modify
