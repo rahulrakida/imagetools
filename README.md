@@ -1,7 +1,7 @@
 ## imagetools
 ### a command-line tool for adding filters to images
 
-### Video Demo not completed yet
+
 ### Description: 
 
 #### Features
@@ -11,6 +11,7 @@
 
 #### TODO
 - GUI (low priority)
+- Video demo (medium priority)
 
 #### Dependencies
 - python3
