@@ -1,8 +1,8 @@
 ## imagetools
 ### a command-line tool for adding filters to images
 
-#### Video Demo not completed yet
-#### Description: 
+### Video Demo not completed yet
+### Description: 
 
 #### Features
 - Blur: `blur`
