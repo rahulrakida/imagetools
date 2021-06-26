@@ -1,3 +1,4 @@
+#! /usr/bin/python
 #    imagetools - command-line tool for adding filters to images
 #    Copyright (C) 2021 Rahul Wavare
 #
@@ -53,7 +54,7 @@ def main():
     
     outfile = apply_filter(args.operation, infile)
 
-    outfile_name = f'image-{str(random.choice(range(1000,10000)))}.png'
+    outfile_name = f"image-{str(random.choice(range(1000,10000)))}.png"
 
     # save the new image
     outfile.save(outfile_name)
