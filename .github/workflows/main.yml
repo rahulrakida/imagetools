@@ -1,7 +1,7 @@
-name: generate-images
+name: tests
 on: [push]
 jobs:
-  generate-images:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
