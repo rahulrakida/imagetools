@@ -1,0 +1,17 @@
+name: generate-images
+on: [push]
+jobs:
+  generate-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - run: python3 -m pip install pillow
+      - run: cd $GITHUB_WORKSPACE
+      - run: python3 imagetools.py blur ./test_files/image.jpg
+      - run: python3 imagetools.py sharpen ./test_files/image.jpg
+      - run: python3 imagetools.py smooth ./test_files/image.jpg
+      - run: python3 imagetools.py smooth+ ./test_files/image.jpg
