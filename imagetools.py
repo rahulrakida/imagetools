@@ -56,7 +56,7 @@ def main():
     outfile_name = None
     while True:
         i = i + 1
-        outfile_name = f"image-{str(random.choice(range(1000,10000)))}.png"
+        outfile_name = "image-{}.png".format(str(random.choice(range(1000,10000))))
         if i >= 10000: # Incredibly rare case in which there are no output filenames available.
             print("error: no possibilities for output filename (How did you manage to get this error?)")
             quit(3)
