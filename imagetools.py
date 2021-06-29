@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/python
 #    imagetools - command-line tool for adding filters to images
 #    Copyright (C) 2021 Rahul Wavare
 #
@@ -44,7 +44,8 @@ def main():
     parser.add_argument('--show', help='Show output image after saving', action='store_true')
     args = parser.parse_args()
 
-    # print(args)
+    for arg in args:
+        print(arg)
 
     # open image, close if invalid
     try:
