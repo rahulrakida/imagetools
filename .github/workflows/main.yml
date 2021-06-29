@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        architecture: ['x64', 'x86']
+        architecture: ['x64']
         python-version: ['3.9']
     name: test with Python ${{ matrix.python-version }} on ${{ matrix.os }}
     steps:
