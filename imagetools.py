@@ -44,9 +44,6 @@ def main():
     parser.add_argument('--show', help='Show output image after saving', action='store_true')
     args = parser.parse_args()
 
-    for arg in args:
-        print(arg)
-
     # open image, close if invalid
     try:
         infile = Image.open(args.filename)
