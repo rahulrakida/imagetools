@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: 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
       - uses: actions/setup-python@v2
         with:
           python-version: '3.9'
