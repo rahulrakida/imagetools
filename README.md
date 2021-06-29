@@ -1,6 +1,6 @@
 # imagetools
 ## a command-line tool for adding filters to images
-[![tests](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml)
+[![tests](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml) [![CodeQL](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml)
 ### [Video Demo](https://youtu.be/z2hX0aL_PFM): [https://youtu.be/z2hX0aL_PFM](https://youtu.be/z2hX0aL_PFM)
 ### Description:
 
