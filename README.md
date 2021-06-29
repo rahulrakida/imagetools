@@ -21,9 +21,8 @@ as a PNG with a random filename: `image-[4 digit random number].png`.
 
 #### TODO
 - GUI (low priority)
-- ~~Video demo (medium priority)~~ - DONE
 
-#### Dependencies
+#### Prerequisites
 - python3
 - python3-pip
 
