@@ -9,10 +9,26 @@ about adding filters to an image on the command-line. There are countless MOBILE
 apps for doing this, but I had never actually heard of a command-line image
 editor. So, I created my own.
 
+##### imagetools.py:
+
 The program uses 4 predefined filters from the PIL.ImageFilter module: `BLUR`,
 `SHARPEN`, `SMOOTH`, and `SMOOTH_MORE`. The input image is loaded as a `PIL.Image`
 object, and converted using the method `PIL.Image.filter()`. The image is then saved
 as a PNG with a random filename: `image-[4 digit random number].png`.
+
+##### test_files/image.png
+
+This is a test file for use in GitHub Actions. 
+Feel free to use it for testing on your own PC.
+
+##### README.md
+
+This document, outlining the features of imagetools.
+
+##### LICENSE
+
+A copy of the GNU General Public License, the license this program falls under.
+More information at the bottom of this document.
 
 #### Features
 - Blur: `blur`
