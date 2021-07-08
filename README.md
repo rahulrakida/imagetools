@@ -33,16 +33,16 @@ A copy of the GNU General Public License, the license this program falls under.
 More information at the bottom of this document.
 
 #### Features
-  - Blur: `blur`
-  - Sharpen: `sharpen`
-  - Smooth: `smooth`, `smooth+`
+-   Blur: `blur`
+-   Sharpen: `sharpen`
+-   Smooth: `smooth`, `smooth+`
 
 #### TODO
-  - GUI (low priority)
+-   GUI (low priority)
 
 #### Prerequisites
-  - python3
-  - python3-pip
+-   python3
+-   python3-pip
 
 #### Instructions
 
