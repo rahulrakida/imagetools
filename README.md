@@ -1,27 +1,29 @@
 # imagetools
 ## a command-line tool for adding filters to images
-[![tests](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml) [![CodeQL](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml)
+[![Codacy 
+Badge](https://app.codacy.com/project/badge/Grade/c290e907e73a441dad0ef53ff10d1455)](https://www.codacy.com/gh/rahulrakida/imagetools/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rahulrakida/imagetools&amp;utm_campaign=Badge_Grade)[![tests](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml) 
+[![CodeQL](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml)
 ### [Video Demo](https://youtu.be/z2hX0aL_PFM): [https://youtu.be/z2hX0aL_PFM](https://youtu.be/z2hX0aL_PFM)
-### Description:
+### Description
 
 One day, I was thinking about ideas for a [CS50](https://cs50.harvard.edu/x/2021) final project, and I thought
 about adding filters to an image on the command-line. There are countless MOBILE
 apps for doing this, but I had never actually heard of a command-line image
 editor. So, I created my own.
 
-##### imagetools.py:
+#### imagetools.py
 
 The program uses 4 predefined filters from the PIL.ImageFilter module: `BLUR`,
 `SHARPEN`, `SMOOTH`, and `SMOOTH_MORE`. The input image is loaded as a `PIL.Image`
 object, and converted using the method `PIL.Image.filter()`. The image is then saved
 as a PNG with a random filename: `image-[4 digit random number].png`.
 
-##### test_files/image.png
+#### test_files/image.png
 
 This is a test file for use in GitHub Actions. 
 Feel free to use it for testing on your own PC.
 
-##### README.md
+#### README.md
 
 This document, outlining the features of imagetools.
 
@@ -31,16 +33,16 @@ A copy of the GNU General Public License, the license this program falls under.
 More information at the bottom of this document.
 
 #### Features
-- Blur: `blur`
-- Sharpen: `sharpen`
-- Smooth: `smooth`, `smooth+`
+  - Blur: `blur`
+  - Sharpen: `sharpen`
+  - Smooth: `smooth`, `smooth+`
 
 #### TODO
-- GUI (low priority)
+  - GUI (low priority)
 
 #### Prerequisites
-- python3
-- python3-pip
+  - python3
+  - python3-pip
 
 #### Instructions
 
