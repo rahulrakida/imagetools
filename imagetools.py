@@ -15,7 +15,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from PIL import Image, ImageFilter
+from PIL import Image, ImageFilter, UnidentifiedImageError
 import os.path
 import argparse
 import random
@@ -47,9 +47,15 @@ def main():
     # open image, close if invalid
     try:
         infile = Image.open(args.filename)
-    except:
-        print("error: invalid image file. maybe this file ain't exist?")
+    except UnidentifiedImageError:
+        print("This file is an invalid image.")
         quit(2)
+    except FileNotFoundError:
+        print("This file does not exist.")
+        quit(4)
+    except Exception as e:
+        print("Unidentified error. This may be a bug.\nPlease send a report at:\nhttps://github.com/rahulrakida/imagetools/issues with below exception.")
+        raise e
     
     outfile = apply_filter(args.operation, infile)
     i = 0
