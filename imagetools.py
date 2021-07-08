@@ -32,9 +32,7 @@ def apply_filter(operation, infile):
     else:
         print("error: invalid operation (not in: blur, sharpen, smooth, smooth+)")
         quit(1)
-    
     return outfile
-
 
 def main():
     # get operation, filename from command line options
