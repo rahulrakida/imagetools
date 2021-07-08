@@ -55,7 +55,7 @@ pip3 install -r requirements.txt
 For usage, type `python3 imagetools.py --help`
 
 #### GNU General Public License 3.0
-```
+
 imagetools - a command-line program for adding filters to images
 Copyright (C) 2021 Rahul Wavare
 
@@ -71,4 +71,4 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
-```
+
