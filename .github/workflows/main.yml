@@ -11,6 +11,16 @@ jobs:
         include:
           - architecture: x86
             os: windows-latest
+            python-version: 3.9
+          - architecture: x86
+            os: windows-latest
+            python-version: 3.8
+          - architecture: x86
+            os: windows-latest
+            python-version: 3.7
+          - architecture: x86
+            os: windows-latest
+            python-version: 3.6
     name: test with Python ${{ matrix.python-version }} ${{ matrix.architecture }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
