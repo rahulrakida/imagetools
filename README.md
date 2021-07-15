@@ -41,8 +41,8 @@ More information at the bottom of this document.
 -   GUI (low priority)
 
 #### Prerequisites
--   python3
--   python3-pip
+-   Python 3.6 or later
+-   pip
 
 #### Instructions
 
