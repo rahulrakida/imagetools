@@ -16,9 +16,13 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from PIL import Image, ImageFilter, UnidentifiedImageError
+from io import BytesIO
+import requests
 import os.path
 import argparse
 import random
+
+from requests.exceptions import RequestException
 
 def apply_filter(operation, infile):
     if operation == 'blur':
@@ -36,21 +40,28 @@ def apply_filter(operation, infile):
 
 def main():
     # get operation, filename from command line options
-    parser = argparse.ArgumentParser(description="command-line tool, adds filters to images")
+    parser = argparse.ArgumentParser(description='command-line tool, adds filters to images')
     parser.add_argument('operation', help='Operation to perform on the image.')
     parser.add_argument('filename', help='Image file path/name')
     parser.add_argument('--show', help='Show output image after saving', action='store_true')
+    parser.add_argument('--url', help='Treat filename as a URL', action='store_true')
     args = parser.parse_args()
 
     # open image, close if invalid
     try:
-        infile = Image.open(args.filename)
+        if args.url:
+            infile = Image.open(BytesIO(requests.get(args.filename).content))
+        else:
+            infile = Image.open(args.filename)
     except UnidentifiedImageError:
         print("This file is an invalid image.")
         quit(2)
     except FileNotFoundError:
         print("This file does not exist.")
         quit(4)
+    except RequestException:
+        print("There was an error with the HTTP request.\nDid you use the --url option on a file path?")
+        quit(5)
     except Exception as e:
         print("Unidentified error. This may be a bug.\nPlease send a report at:\nhttps://github.com/rahulrakida/imagetools/issues with below exception.")
         raise e
