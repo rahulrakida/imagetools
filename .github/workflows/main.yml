@@ -28,9 +28,13 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           architecture: ${{ matrix.architecture }}
-      - run: python3 -m pip install pillow
+      - run: python3 -m pip install -r requirements.txt
       - run: cd $GITHUB_WORKSPACE
       - run: python3 imagetools.py blur ./test_files/image.jpg
       - run: python3 imagetools.py sharpen ./test_files/image.jpg
       - run: python3 imagetools.py smooth ./test_files/image.jpg
       - run: python3 imagetools.py smooth+ ./test_files/image.jpg
+      - run: python3 imagetools.py blur https://www.gstatic.com/webp/gallery/1.jpg --url
+      - run: python3 imagetools.py sharpen https://www.gstatic.com/webp/gallery/1.jpg --url
+      - run: python3 imagetools.py smooth https://www.gstatic.com/webp/gallery/1.jpg --url
+      - run: python3 imagetools.py smooth+ https://www.gstatic.com/webp/gallery/1.jpg --url
