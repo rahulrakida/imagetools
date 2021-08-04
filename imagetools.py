@@ -16,13 +16,12 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from PIL import Image, ImageFilter, UnidentifiedImageError
+from requests.exceptions import RequestException
 from io import BytesIO
 import requests
 import os.path
 import argparse
 import random
-
-from requests.exceptions import RequestException
 
 def apply_filter(operation, infile):
     if operation == 'blur':
