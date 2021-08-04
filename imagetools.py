@@ -25,7 +25,7 @@ import random
 import typing
 import PIL
 
-def apply_filter(operation: str, infile: PIL.Image) -> PIL.Image:
+def apply_filter(operation: str, infile: PIL.Image.Image) -> PIL.Image.Image:
     """\
     Apply a filter to an image.
     Valid values for operation:
