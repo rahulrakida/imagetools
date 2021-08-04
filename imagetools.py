@@ -22,8 +22,15 @@ import requests
 import os.path
 import argparse
 import random
+import typing
+import PIL
 
-def apply_filter(operation, infile):
+def apply_filter(operation: str, infile: PIL.Image) -> PIL.Image:
+    """\
+    Apply a filter to an image.
+    Valid values for operation:
+    blur, sharpen, smooth, smooth+\
+    """
     if operation == 'blur':
         outfile = infile.filter(ImageFilter.BLUR)
     elif operation == 'sharpen':
@@ -34,7 +41,7 @@ def apply_filter(operation, infile):
         outfile = infile.filter(ImageFilter.SMOOTH_MORE)
     else:
         print("error: invalid operation (not in: blur, sharpen, smooth, smooth+)")
-        quit(1)
+        raise NotImplementedError
     return outfile
 
 def main():
