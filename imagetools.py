@@ -50,6 +50,7 @@ def main():
     # open image, close if invalid
     try:
         if args.url:
+            print("--url option detected, connecting to " + args.filename)
             infile = Image.open(BytesIO(requests.get(args.filename).content))
         else:
             infile = Image.open(args.filename)
