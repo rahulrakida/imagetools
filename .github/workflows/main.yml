@@ -34,7 +34,7 @@ jobs:
       - run: python3 imagetools.py sharpen ./test_files/image.jpg
       - run: python3 imagetools.py smooth ./test_files/image.jpg
       - run: python3 imagetools.py smooth+ ./test_files/image.jpg
-      - run: python3 imagetools.py blur https://github.com/rahulrakida/imagetools/blob/main/test_files/image.jpg --url
-      - run: python3 imagetools.py sharpen https://github.com/rahulrakida/imagetools/blob/main/test_files/image.jpg --url
-      - run: python3 imagetools.py smooth https://github.com/rahulrakida/imagetools/blob/main/test_files/image.jpg --url
-      - run: python3 imagetools.py smooth+ https://github.com/rahulrakida/imagetools/blob/main/test_files/image.jpg --url
+      - run: python3 imagetools.py blur https://www.gstatic.com/webp/gallery/1.jpg --url
+      - run: python3 imagetools.py sharpen https://www.gstatic.com/webp/gallery/1.jpg --url
+      - run: python3 imagetools.py smooth https://www.gstatic.com/webp/gallery/1.jpg --url
+      - run: python3 imagetools.py smooth+ https://www.gstatic.com/webp/gallery/1.jpg --url
