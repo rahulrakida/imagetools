@@ -4,7 +4,7 @@ from io import BytesIO
 import requests
 
 def test_filter():
-    image = Image('test_files/image.jpg')
+    image = Image.open('test_files/image.jpg')
     assert imagetools.apply_filter('blur', image)
     assert imagetools.apply_filter('sharpen', image)
     assert imagetools.apply_filter('smooth', image)
