@@ -4,7 +4,7 @@
 Badge](https://app.codacy.com/project/badge/Grade/c290e907e73a441dad0ef53ff10d1455)](https://www.codacy.com/gh/rahulrakida/imagetools/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rahulrakida/imagetools&amp;utm_campaign=Badge_Grade)
 [![tests](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/main.yml) 
 [![CodeQL](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml)
-[![Code size]([![CodeQL](https://github.com/rahulrakida/imagetools/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)])]
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rahulrakida/imagetools)
 
 ### [Video Demo](https://youtu.be/z2hX0aL_PFM): [https://youtu.be/z2hX0aL_PFM](https://youtu.be/z2hX0aL_PFM)
 #### Description
