@@ -14,16 +14,22 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
+def python_version_string(version_info: tuple) -> str:
+    return '{}.{}.{}-{}.{}'.format(version_info[0], version_info[1], version_info[2], version_info[3], version_info[4])
+from sys import version_info
+from io import BytesIO
+if version_info[0] < 3 or version_info[1] < 6:
+    print('Python {} detected. Please use Python 3.6 or above'.format(python_version_string(version_info)))
+    quit(6)
 from PIL import Image, ImageFilter, UnidentifiedImageError
 from requests.exceptions import RequestException
-from io import BytesIO
 import requests
 import os.path
 import argparse
 import random
 import typing
 import PIL
+
 
 def apply_filter(operation: str, infile: PIL.Image.Image) -> PIL.Image.Image:
     """\
