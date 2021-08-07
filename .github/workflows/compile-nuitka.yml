@@ -1,8 +1,11 @@
-name: learn-github-actions
-on: [push]
+name: Test compiling imagetools.py using Nuitka
+on: [push, pull_request]
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
+  test-compile:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 #    imagetools - command-line tool for adding filters to images
 #    Copyright (C) 2021 Rahul Wavare
 #
