@@ -13,5 +13,7 @@ jobs:
           python-version: '3.9'
       - name: Install Nuitka
         run: pip install nuitka
+      - name: Install packages from requirements.txt
+        run: pip install -r requirements.txt
       - name: Compile using Nuitka
         run: python3 -m nuitka imagetools.py
