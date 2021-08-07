@@ -10,7 +10,7 @@ def test_filter():
     assert imagetools.apply_filter('sharpen', image)
     assert imagetools.apply_filter('smooth', image)
     assert imagetools.apply_filter('smooth+', image)
-    content_bytes = requests.get('https://picsum.photos/{}/{}'.format(random.randint(100, 999), random.randint(100, 999)).content)
+    content_bytes = requests.get('https://picsum.photos/{}/{}'.format(random.randint(100, 999), random.randint(100, 999))).content
     image_download = Image.open(BytesIO(content_bytes))
     assert imagetools.apply_filter('blur', image_download)
     assert imagetools.apply_filter('sharpen', image_download)

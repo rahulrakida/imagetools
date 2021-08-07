@@ -16,4 +16,4 @@ jobs:
       - name: Install packages from requirements.txt
         run: pip install -r requirements.txt
       - name: Compile using Nuitka
-        run: python3 -m nuitka imagetools.py
+        run: python3 -m nuitka imagetools.py --assume-yes-for-downloads
