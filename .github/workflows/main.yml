@@ -19,7 +19,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
           architecture: ${{ matrix.architecture }}
       - run: cd $GITHUB_WORKSPACE
-      - run: python3 -m pip install -r requirements.txt
+      - run: pip install poetry
+      - run: poetry install
       - run: python3 imagetools.py blur ./test_files/image.jpg
       - run: python3 imagetools.py sharpen ./test_files/image.jpg
       - run: python3 imagetools.py smooth ./test_files/image.jpg

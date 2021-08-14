@@ -12,7 +12,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: export CODACY_PROJECT_TOKEN=${{ secrets.CODACY_PROJECT_TOKEN }}
-      - run: python3 -m pip install -r requirements.txt
+      - run: pip install poetry
+      - run: poetry install
       - run: coverage run -m pytest
       - run: coverage xml
       - uses: codacy/codacy-coverage-reporter-action@1.0.0
