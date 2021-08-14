@@ -52,7 +52,8 @@ More information at the bottom of this document.
 ```bash
 git clone https://github.com/rahulrakida/imagetools.git
 cd imagetools
-pip3 install -r requirements.txt
+pip install poetry
+poetry install
 ```
 
 For usage, type `python3 imagetools.py --help`
