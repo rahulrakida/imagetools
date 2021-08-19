@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "imagetools"
+version = "1.1.2"
+description = "a command-line tool for adding filters to images"
+authors = ["Rahul Wavare <rahulrakida@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://rahulrakida.github.io/imagetools/"
+repository = "https://github.com/rahulrakida/imagetools"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pillow = "^8.3.1"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+coverage = "^5.5"
+pytest = "^6.2.4"
+Nuitka = "^0.6.16"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
