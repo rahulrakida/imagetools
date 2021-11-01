@@ -14,7 +14,7 @@ pillow = "^8.3.1"
 requests = "^2.26.0"
 
 [tool.poetry.dev-dependencies]
-coverage = "^5.5"
+coverage = "^6.1"
 pytest = "^6.2.5"
 Nuitka = "^0.6.16"
 
