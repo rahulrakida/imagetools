@@ -93,7 +93,7 @@ python-versions = "*"
 
 [[package]]
 name = "nuitka"
-version = "0.6.16.4"
+version = "0.8"
 description = "Python compiler with full language support and CPython compatibility"
 category = "dev"
 optional = false
@@ -232,7 +232,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "52e0343c90062aa530b2b639bb3e38e182736f55e0b130d7d8c23ee67d5c7479"
+content-hash = "2b52e4d2146438c81649aeb5c87275e5d484cea971e308986b7b3408d80f87d6"
 
 [metadata.files]
 atomicwrites = [
@@ -322,7 +322,7 @@ iniconfig = [
     {file = "iniconfig-1.1.1.tar.gz", hash = "sha256:bc3af051d7d14b2ee5ef9969666def0cd1a000e121eaea580d4a313df4b37f32"},
 ]
 nuitka = [
-    {file = "Nuitka-0.6.16.4.tar.gz", hash = "sha256:986d8c46a3db9f27e0d28817413715bdd9dfb6ad97770ba0d1b51b4b0a028538"},
+    {file = "Nuitka-0.8.tar.gz", hash = "sha256:ded299f34038577dda0c7e609f0e0d16e06b517d92bfb8e5cac6258c6c3430f8"},
 ]
 packaging = [
     {file = "packaging-21.0-py3-none-any.whl", hash = "sha256:c86254f9220d55e31cc94d69bade760f0847da8000def4dfe1c6b872fd14ff14"},
