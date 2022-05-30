@@ -16,7 +16,7 @@ requests = "^2.26.0"
 [tool.poetry.dev-dependencies]
 coverage = "^5.5"
 pytest = "^6.2.5"
-Nuitka = "^0.6.16"
+Nuitka = "^0.8.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
